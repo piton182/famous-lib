@@ -12,6 +12,7 @@ function Avatar(node, options) {
   ava.el = new DOMElement(ava, {tagName: 'img'});
   ava.el.setAttribute('src', options.src);
   ava.el.setProperty('border-radius', size / 2 + 'px');
+  return ava;
 }
 
 module.exports = Avatar;
